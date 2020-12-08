@@ -33,6 +33,37 @@ button{
 .menu{
     margin-left: auto;
 }
+
+.menu__btn{
+    width: 40px;
+    height: 30px;
+    display: none;
+}
+.menu__btn span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+.menu__btn::after,
+.menu__btn::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+}
+.menu__btn::after{
+    top: 0;
+}
+.menu__btn::before{
+    bottom: 0;
+}
+
 .menu__list{
     display: flex;
 }
@@ -336,7 +367,7 @@ button{
     margin-bottom: 9px;
 }
 .blog__text{
-    margin-bottom: 55px;-
+    margin-bottom: 55px;
 }
 .slider{
     margin: 0 -20px;
@@ -410,9 +441,6 @@ button{
 }
 .footer__list{
     list-style: none;
-}
-.footer__list-item{
-
 }
 .footer__list-link{
     font-size: 16px;
