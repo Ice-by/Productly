@@ -26,10 +26,6 @@
         height: auto;
         padding-top: 25px;
     }
-    .menu{
-        order: 1;
-        width: 100%;
-    }
     .menu__list{
         justify-content: flex-end;
         padding-top: 30px;
